@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    width: 280px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* 계산기 디스플레이 스타일 */
+#display {
+    width: 100%;
+    height: 100px; 
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background: #413c3c;
+    color: white;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* 최상단 버튼 (3열) */
+.top-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+/* 중간 버튼들 (4열) */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+/* 최하단 버튼 (3열) */
+.bottom-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 5px;
+}
+
+button {
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+/* 연산자 버튼 스타일 */
+.operator {
+    background-color: #ff8c00;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #e77d00;
+}

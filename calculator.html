@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상우의 계산기</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script defer src="calculator.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+
+        <!-- 최상단 (3열) -->
+        <div class="top-buttons">
+            <button onclick="backspace()">&lt;</button>
+            <button onclick="clearDisplay()">AC</button>
+            <button class="operator" onclick="appendCharacter('/')">÷</button>
+        </div>
+
+        <!-- 중간 버튼들 (4열) -->
+        <div class="buttons">
+            <button onclick="appendCharacter('7')">7</button>
+            <button onclick="appendCharacter('8')">8</button>
+            <button onclick="appendCharacter('9')">9</button>
+            <button class="operator" onclick="appendCharacter('*')">x</button>
+
+            <button onclick="appendCharacter('4')">4</button>
+            <button onclick="appendCharacter('5')">5</button>
+            <button onclick="appendCharacter('6')">6</button>
+            <button class="operator" onclick="appendCharacter('-')">-</button>
+
+            <button onclick="appendCharacter('1')">1</button>
+            <button onclick="appendCharacter('2')">2</button>
+            <button onclick="appendCharacter('3')">3</button>
+            <button class="operator" onclick="appendCharacter('+')">+</button>
+        </div>
+
+        <!-- 최하단 (3열) -->
+        <div class="bottom-buttons">
+            <button onclick="appendCharacter('0')">0</button>
+            <button onclick="appendCharacter('.')">.</button>
+            <button class="operator" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+</body>
+</html>
