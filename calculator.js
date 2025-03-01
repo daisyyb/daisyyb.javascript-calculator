@@ -48,6 +48,7 @@ function evaluateExpression(expression) {
 
 // 주어진 연산자들로 계산을 처리하는 함수
 function evaluateByOperators(expression, operators) {
+    //연산자를 구분하여 계산에 사용 신기함 @.@
     let regex = new RegExp(`(\\d+(\\.\\d+)?)([${operators.join('')}])(\\d+(\\.\\d+)?)`, 'g');
     let match;
     
