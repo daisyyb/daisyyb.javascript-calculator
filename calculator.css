@@ -67,10 +67,10 @@ button:hover {
 
 /* 연산자 버튼 스타일 */
 .operator {
-    background-color: #ff8c00;
+    background-color: #e89650;
     color: white;
 }
 
 .operator:hover {
-    background-color: #e77d00;
+    background-color: #b4753e;
 }
