@@ -63,7 +63,7 @@ function evaluateByOperators(expression, operators) {
     let match;
 
     //한칸에 소수점까지 넣기에 1, 3 ,4 로 처리가능
-    while ((match = regex.exec(expression)) !== null) {
+    while ((match = regex.exec(expression)) !== null) { // <- 여기서 match 배열로 넣는다.
         let left = parseFloat(match[1]);
         let operator = match[3];
         let right = parseFloat(match[4]);
